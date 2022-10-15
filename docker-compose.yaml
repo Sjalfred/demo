@@ -1,0 +1,35 @@
+version: '3.6'
+services:
+  varnish:
+    build:
+      context: ./cache
+    container_name: varnish
+    ports:
+      - "4000:80"
+    tmpfs:
+      - /var/lib/varnish:exec
+    environment:
+      - VARNISH_SIZE=2G  
+    command: "-p default_keep=300"
+    networks:
+      - external
+  
+  demo-service:
+    build:
+      context: ./
+    container_name: demo-service
+    ports:
+      - '3001:3000'
+    networks:
+      - internal
+      - external    
+
+volumes:
+  varnish-vm:
+
+networks:
+  internal:
+    driver: bridge
+    internal: true
+  external:
+    driver: bridge

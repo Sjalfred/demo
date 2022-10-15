@@ -1,0 +1,352 @@
+[
+    {
+        "conditions": {
+            "all": [
+                {
+                    "fact": "flight",
+                    "operator": "in",
+                    "value": [
+                        "EK001",
+                        "EK002",
+                        "EK003"
+                    ]
+                },
+                {
+                    "fact": "month",
+                    "operator": "equal",
+                    "value": "10"
+                },
+                {
+                    "fact": "week",
+                    "operator": "greaterThan",
+                    "value": 4
+                }
+            ]
+        },
+        "event": {
+            "type": "price",
+            "params": {
+                "value": "2500"
+            }
+        }
+    },
+    {
+        "conditions": {
+            "all": [
+                {
+                    "fact": "flight",
+                    "operator": "in",
+                    "value": [
+                        "EK001",
+                        "EK002",
+                        "EK003"
+                    ]
+                },
+                {
+                    "any": [
+                        {
+                            "fact": "month",
+                            "operator": "equal",
+                            "value": "10"
+                        },
+                        {
+                            "fact": "month",
+                            "operator": "equal",
+                            "value": "11"
+                        }
+                    ]
+                },
+                {
+                    "fact": "week",
+                    "operator": "lessThanInclusive",
+                    "value": 4
+                }
+            ]
+        },
+        "event": {
+            "type": "price",
+            "params": {
+                "value": "2000"
+            }
+        }
+    },
+    {
+        "conditions": {
+            "all": [
+                {
+                    "fact": "flight",
+                    "operator": "in",
+                    "value": [
+                        "EK023",
+                        "EK024",
+                        "EK025"
+                    ]
+                },
+                {
+                    "fact": "month",
+                    "operator": "equal",
+                    "value": "10"
+                },
+                {
+                    "fact": "week",
+                    "operator": "greaterThan",
+                    "value": 4
+                }
+            ]
+        },
+        "event": {
+            "type": "price",
+            "params": {
+                "value": "1500"
+            }
+        }
+    },
+    {
+        "conditions": {
+            "all": [
+                {
+                    "fact": "flight",
+                    "operator": "in",
+                    "value": [
+                        "EK023",
+                        "EK024",
+                        "EK025"
+                    ]
+                },
+                {
+                    "fact": "month",
+                    "operator": "equal",
+                    "value": "10"
+                },
+                {
+                    "fact": "week",
+                    "operator": "lessThanInclusive",
+                    "value": 4
+                }
+            ]
+        },
+        "event": {
+            "type": "price",
+            "params": {
+                "value": "1000"
+            }
+        }
+    },
+    {
+        "conditions": {
+            "all": [
+                {
+                    "fact": "flight",
+                    "operator": "in",
+                    "value": [
+                        "EK001",
+                        "EK002",
+                        "EK003"
+                    ]
+                },
+                {
+                    "fact": "month",
+                    "operator": "equal",
+                    "value": "11"
+                },
+                {
+                    "fact": "week",
+                    "operator": "greaterThan",
+                    "value": 4
+                }
+            ]
+        },
+        "event": {
+            "type": "price",
+            "params": {
+                "value": "2525"
+            }
+        }
+    },
+    {
+        "conditions": {
+            "all": [
+                {
+                    "fact": "flight",
+                    "operator": "in",
+                    "value": [
+                        "EK023",
+                        "EK024",
+                        "EK025"
+                    ]
+                },
+                {
+                    "fact": "month",
+                    "operator": "equal",
+                    "value": "11"
+                },
+                {
+                    "fact": "week",
+                    "operator": "greaterThan",
+                    "value": 4
+                }
+            ]
+        },
+        "event": {
+            "type": "price",
+            "params": {
+                "value": "1525"
+            }
+        }
+    },
+    {
+        "conditions": {
+            "all": [
+                {
+                    "fact": "flight",
+                    "operator": "in",
+                    "value": [
+                        "EK023",
+                        "EK024",
+                        "EK025"
+                    ]
+                },
+                {
+                    "fact": "month",
+                    "operator": "equal",
+                    "value": "11"
+                },
+                {
+                    "fact": "week",
+                    "operator": "lessThanInclusive",
+                    "value": 4
+                }
+            ]
+        },
+        "event": {
+            "type": "price",
+            "params": {
+                "value": "1025"
+            }
+        }
+    },
+    {
+        "conditions": {
+            "all": [
+                {
+                    "fact": "flight",
+                    "operator": "in",
+                    "value": [
+                        "EK001",
+                        "EK002",
+                        "EK003"
+                    ]
+                },
+                {
+                    "fact": "month",
+                    "operator": "equal",
+                    "value": "12"
+                },
+                {
+                    "fact": "week",
+                    "operator": "greaterThan",
+                    "value": 4
+                }
+            ]
+        },
+        "event": {
+            "type": "price",
+            "params": {
+                "value": "2550"
+            }
+        }
+    },
+    {
+        "conditions": {
+            "all": [
+                {
+                    "fact": "flight",
+                    "operator": "in",
+                    "value": [
+                        "EK001",
+                        "EK002",
+                        "EK003"
+                    ]
+                },
+                {
+                    "fact": "month",
+                    "operator": "equal",
+                    "value": "12"
+                },
+                {
+                    "fact": "week",
+                    "operator": "lessThanInclusive",
+                    "value": 4
+                }
+            ]
+        },
+        "event": {
+            "type": "price",
+            "params": {
+                "value": "2050"
+            }
+        }
+    },
+    {
+        "conditions": {
+            "all": [
+                {
+                    "fact": "flight",
+                    "operator": "in",
+                    "value": [
+                        "EK023",
+                        "EK024",
+                        "EK025"
+                    ]
+                },
+                {
+                    "fact": "month",
+                    "operator": "equal",
+                    "value": "12"
+                },
+                {
+                    "fact": "week",
+                    "operator": "greaterThan",
+                    "value": 4
+                }
+            ]
+        },
+        "event": {
+            "type": "price",
+            "params": {
+                "value": "1550"
+            }
+        }
+    },
+    {
+        "conditions": {
+            "all": [
+                {
+                    "fact": "flight",
+                    "operator": "in",
+                    "value": [
+                        "EK023",
+                        "EK024",
+                        "EK025"
+                    ]
+                },
+                {
+                    "fact": "month",
+                    "operator": "equal",
+                    "value": "12"
+                },
+                {
+                    "fact": "week",
+                    "operator": "lessThanInclusive",
+                    "value": 4
+                }
+            ]
+        },
+        "event": {
+            "type": "price",
+            "params": {
+                "value": "1050"
+            }
+        }
+    }
+]
