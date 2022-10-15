@@ -35,12 +35,33 @@ Date : MM-DD-YYYY
 
 ### Postman Result
 Input for Auth Call
+
+Header
+
+```
+Content-Type: application/json
+
+```
+
+Body
+
 ```Json
 {
   "APP_NAME": "ek_user",
   "PASSWORD": "e311g#987"
 }
 ```
+
+Input for API calls
+
+Header
+
+```
+x-access-token: {Generated token from the Auth call}
+
+```
+
+
 <br></br>
 <img width="685" alt="auth_genarator" src="https://user-images.githubusercontent.com/24268967/195995415-2f8f2d7a-9221-4007-aa42-2c3b2b86efc3.png">
 
