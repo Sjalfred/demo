@@ -153,3 +153,22 @@ x-access-token: {Generated token from the Auth call}
 
 
 <img width="1068" alt="fourth" src="https://user-images.githubusercontent.com/24268967/195988136-7ff4d1c1-13b8-45b2-9fb3-44f414da88fe.png">
+
+<BR/>
+
+## CI/CD
+- AWS DevOps or Github actions or Jenkins for CI/CD
+- Code Quality - Jest and SuperTest Unit Testing libraries used and can be integrated the same with Jenkins pipeline using Static Code Analysis tools like SonarQube.
+- Security (Release Secure Code at Scale) - 
+  - ShiftLeft code scan for vulnerabilities 
+  - Trivy for docker image scanning 
+  - npm audit to identify vulnerabilities in the npm packages
+
+## Performance Testing (Load-Test-As-Code)
+- Gatling can be used to load test the service before deploying it to production based on the load range mentioned in the problem statement (Eg: 1K to 50K req/sec for flights service)
+- It's designed for DevOps and CI/CD, so can be easily integrated with the development pipeline for continuous load testing
+Workload Modelling
+
+## Observability
+- Monitoring & Logging tools considerations like AppDynamics/Splunk or Dynatrace/ELK
+- Node.js Memory Diagnostics can be used to get  Heap Profiler, Snapshot and GC Traces
