@@ -41,12 +41,13 @@ Date : MM-DD-YYYY
   "PASSWORD": "e311g#987"
 }
 ```
+<br></br>
 <img width="685" alt="auth_genarator" src="https://user-images.githubusercontent.com/24268967/195995415-2f8f2d7a-9221-4007-aa42-2c3b2b86efc3.png">
 
-
+<br></br>
 <img width="685" alt="flight-result" src="https://user-images.githubusercontent.com/24268967/195995420-5c6443a4-537c-48f3-a99a-05e779f4d9fe.png">
 
-
+<br></br>
 <img width="696" alt="price-result" src="https://user-images.githubusercontent.com/24268967/195995422-978004d8-64f2-4841-9936-e719466d2804.png">
 
 
