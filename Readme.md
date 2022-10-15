@@ -108,7 +108,7 @@ x-access-token: {Generated token from the Auth call}
 
 
 
-##  Service @ Scale
+##  Architecture Design (Service @ Scale)
 
 
 ### High availably setup 
