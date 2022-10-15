@@ -34,7 +34,7 @@ Date : MM-DD-YYYY
 
 
 ### Postman Result
-
+Input for Auth Call
 ```Json
 {
   "APP_NAME": "ek_user",
