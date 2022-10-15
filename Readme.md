@@ -1,4 +1,9 @@
 
+## Technology Stack & Tools
+
+Node.js, Express.js, Docker
+
+
 ## Installation and Testing
 
 ### With Docker
@@ -72,17 +77,20 @@ x-access-token: {Generated token from the Auth call}
 <img width="696" alt="price-result" src="https://user-images.githubusercontent.com/24268967/195995422-978004d8-64f2-4841-9936-e719466d2804.png">
 
 
-### Varnish(Cache service)
+## API Design
+### Caching Strategy
 
 - All Requests, except authorize call from Client to API service goes via Varnish
 - Varnish will Cache all the response from API service depending on the cache-control(max-age) set on the response header.
-
+- Details about the TTL set for both the API
+  - Flight - 24hrs
+  - Price - no varnish cache
 
 
 ### Flight Service
 
 - Client will call API service to get the JWT token .
-- API service will make  asynchronous   calls to 5 downstream services to get the Flight Data for the input provided .
+- API service will make  asynchronous   calls to 5 downstream services to get the Flight Data for the input provided. This is done to achieve the SLA of 850 ms
 - Flight Number is Returned  to Client.
 
 
@@ -111,11 +119,23 @@ x-access-token: {Generated token from the Auth call}
 ##  Architecture Design (Service @ Scale)
 
 
+### Cloud Deployment
+
+- Container Deployment platforms like OpenShift or EKS on AWS
+- HashiCorp Vault on AWS for secret management
+- Amazon ECR - Docker container registry for storing docker images
+
+
 ### High availably setup 
 
 - Two AWS Region is considered 
 - Each region , Two Availability Zone is Considered .
 - Cluster Database is setup across each region .
+- Health-check endpoint  / Liveliness probe is created  will be used for automatic traffic diversion between datacenters using Akamai GTM
+
+### Autoscaling
+- Leverage HPA & VPA of the container Platform
+- Resource limits for pod/container (CPU & Memory) based on Service
 
 ### Akamai Edge Solution is Considered 
 
